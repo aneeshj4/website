@@ -1,0 +1,16 @@
+<table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp" align="center" style="margin-top: 20px; margin-bottom: 20px">
+                      <thead>
+                        <tr>
+                            <th class="mdl-data-table__cell--non-numeric">Course Number</th>
+                            <th class="mdl-data-table__cell--non-numeric">Course Name</th>
+                            <th class="mdl-data-table__cell--non-numeric">Year</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr *ngFor="let course of courses">
+                            <td class="mdl-data-table__cell--non-numeric">{{course.number}}</td>
+                            <td class="mdl-data-table__cell--non-numeric">{{course.name}}</td>
+                            <td class="mdl-data-table__cell--non-numeric">{{course.year}}</td>
+                        </tr>
+                      </tbody>
+</table>

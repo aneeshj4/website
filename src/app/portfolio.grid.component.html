@@ -1,0 +1,16 @@
+<div class="mdl-grid portfolio-max-width">
+                <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card" *ngFor="let card of cards" style="height: min-content">
+                    <div *ngIf=card.imageUrl class="mdl-card__media">
+                        <img class="article-image" src={{card.imageUrl}} border="0" alt="">
+                    </div>
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text">{{card.name}}</h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        {{card.description}}
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <a *ngIf=card.readMoreLink class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href={{card.readMoreLink}}>Read more</a>
+                        <a *ngIf=card.projectLink class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href={{card.projectLink}}>Link</a>
+                    </div>
+                </div>
