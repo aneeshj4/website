@@ -22,23 +22,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>Material Design Lite</title>
-
-    <!-- Add to homescreen for Chrome on Android -->
-    <meta name="mobile-web-app-capable" content="yes">
-    <link rel="icon" sizes="192x192" href="images/android-desktop.png">
-
-    <!-- Add to homescreen for Safari on iOS -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
-    <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
-
-    <!-- Tile icon for Win8 (144x144 + tile color) -->
-    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
-    <meta name="msapplication-TileColor" content="#3372DF">
-
-    <link rel="shortcut icon" href="images/favicon.png">
+    <title>Secured In</title>
 
     <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
     <!--
@@ -73,19 +57,23 @@
             </div>
             <h3>What is Secured In?</h3>
               <p>
-               Secured In is an applicaion for iOS and Android designed to protect your data in an increasingly security-centric world. In the app you are able to save any text data, including passwords (the app even includes a password generator), as well as photos. Everything is encrypted with the industry standard <i>and above</i>.
+               Secured In is an applicaion for iOS and Android designed to protect your data in an increasingly security-centric world. In the app you are able to save any text data, including passwords (the app even includes a password generator), as well as photos. Everything is encrypted with AES-256 when possible and with AES-128 as a fallback. AES-128 is the industry standard, and AES-256 is orders of magnitudes more difficult to break.
                </p>
             <h3>What technology is behind it?</h3>
               <p>
                 The power of Secured In lies in the fact that the only way to view your data is to enter a password that you set. Using Password Based Key Derivation Function 2 (PBKDF2), a randomly generated salt, and a certain number of iterations, a key is derived based on the password that you enter. This key is what is used to encrypt the data. So, without the password, the key is not known and the data remains encrypted.
-
-                Secured In utilizes AES-256 to encrypt the data; AES-128 is an industry standard, and AES-256 is a step above that.
+              </p>
+              <p>
+                Secured In utilizes AES-256 to encrypt the data; AES-128 is an industry standard, and AES-256 is orders of magnitudes more difficult to break.
+              </p>
+              <p>
+                While an intutive system of encryption is used to secure user data, the problem gets slightly more complicated when syncing with a server and sharing with users is added. When a user (in this case let's say the user is Alice) opens the application, a challenge is sent to Alice's device to verify that it is in fact Alice. Only she would have her private key, so only she can actually complete the challenge. Sharing user data with others uses a combination of RSA and AES.
               </p>
           </div>
         </div>
         <footer class="demo-footer mdl-mini-footer">
          <div class="mdl-mini-footer__left-section">
-                    <div class="mdl-logo">Aneesh Jindal</div>
+                    <div class="mdl-logo">Created with Angular 2 and hosted on Firebase. See <a href="https://github.com/aneeshj4/website"> source code</a>.</div>
                 </div>
                 <div class="mdl-mini-footer__right-section">
                     <ul class="mdl-mini-footer__link-list">

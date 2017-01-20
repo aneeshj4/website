@@ -2,7 +2,7 @@
 
 .portfolio-header {
   position: relative;
-  background-image: url(images/header-bg.jpg);
+  background-image: url(assets/header-bg.jpg);
 }
 
 .portfolio-header .mdl-layout__header-row {
@@ -31,7 +31,7 @@
 }
 
 .portfolio-logo {
-  background: url(images/logo.png) 50% no-repeat;
+  background: url(assets/logo.png) 50% no-repeat;
   background-size: cover;
   height: 75px;
   width: 75px;
@@ -154,7 +154,7 @@ img.article-image {
 }
 
 footer {
-  background-image: url(images/footer-background.png);
+  background-image: url(assets/footer-background.png);
   background-size: cover;
 }
 
