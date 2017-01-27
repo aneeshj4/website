@@ -6,6 +6,7 @@ import { MaterialModule } from '@angular/material';
 import { PortfolioGrid } from 'app/portfolio.grid.component';
 import { AboutComponent } from 'app/about.component';
 import { CoursesComponent } from "app/courses.component";
+import { TutorialsComponent } from "app/tutorials.component";
 import { CommonModule } from '@angular/common';
 
 import "hammerjs"
@@ -17,7 +18,8 @@ import { AppComponent } from './app.component';
     AppComponent,
     PortfolioGrid,
     AboutComponent,
-    CoursesComponent
+    CoursesComponent,
+    TutorialsComponent
   ],
   imports: [
     BrowserModule,
